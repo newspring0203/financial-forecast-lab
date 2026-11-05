@@ -1,0 +1,27 @@
+# Publish only reproducible runtime, source snapshot, final results, and release tests.
+*
+!.gitignore
+!README.md
+!requirements.txt
+!release_plan.json
+!run_final.py
+!download_data.py
+!forecast_lab/
+forecast_lab/*
+!forecast_lab/__init__.py
+!forecast_lab/data.py
+!forecast_lab/models.py
+!forecast_lab/cashflow.py
+!forecast_lab/integrity.py
+!tests/
+tests/*
+!tests/test_release.py
+!data/
+data/*
+!data/raw/
+data/raw/*
+!data/raw/ti_companyfacts.json
+!data/raw/manifest.json
+!outputs/
+outputs/*
+!outputs/final_*

@@ -1,0 +1,373 @@
+{
+  "revision": "v2 exploratory",
+  "default_pipeline": "original",
+  "candidate_status": "Not promoted: quarterly gains do not carry consistently into annual FCFF or 2026 monitoring",
+  "selected_revenue_model": "equal_blend",
+  "selected_profit_model": "delta_ols_12",
+  "selection_uses": "2019-2023 one-quarter validation MAE only; revised candidates introduced after prior evaluation was inspected",
+  "main_sample": "2012Q1-2025Q4, 56 quarters",
+  "monitor": "2026Q1-Q3, separately reported, 3 observations",
+  "asof": "2026-02-06",
+  "scores": [
+    {
+      "target": "revenue",
+      "stage": "validation",
+      "model": "equal_blend",
+      "n": 20,
+      "mae": 215.45481493295682,
+      "rmse": 271.13745755907155,
+      "mape_pct": 5.038327849234148,
+      "bias": -6.189304104814437
+    },
+    {
+      "target": "revenue",
+      "stage": "validation",
+      "model": "holt_winters",
+      "n": 20,
+      "mae": 217.79746289453928,
+      "rmse": 270.9166971981789,
+      "mape_pct": 5.1242961297656,
+      "bias": 13.501989777939684
+    },
+    {
+      "target": "revenue",
+      "stage": "validation",
+      "model": "lagged_ols",
+      "n": 20,
+      "mae": 219.6650678987521,
+      "rmse": 282.2255228465421,
+      "mape_pct": 5.115519848047308,
+      "bias": -25.880597987568308
+    },
+    {
+      "target": "revenue",
+      "stage": "validation",
+      "model": "seasonal_naive",
+      "n": 20,
+      "mae": 563.35,
+      "rmse": 634.3997556746061,
+      "mape_pct": 13.0502065272942,
+      "bias": -86.75
+    },
+    {
+      "target": "revenue",
+      "stage": "evaluation",
+      "model": "equal_blend",
+      "n": 8,
+      "mae": 145.3260974449284,
+      "rmse": 167.0383050868989,
+      "mape_pct": 3.6373156107548605,
+      "bias": -59.741051485510354
+    },
+    {
+      "target": "revenue",
+      "stage": "evaluation",
+      "model": "holt_winters",
+      "n": 8,
+      "mae": 162.99398777216857,
+      "rmse": 187.47932565643166,
+      "mape_pct": 4.076629210941047,
+      "bias": -55.46432434864437
+    },
+    {
+      "target": "revenue",
+      "stage": "evaluation",
+      "model": "lagged_ols",
+      "n": 8,
+      "mae": 128.71059329458683,
+      "rmse": 152.7089652667154,
+      "mape_pct": 3.220194886504958,
+      "bias": -64.01777862237623
+    },
+    {
+      "target": "revenue",
+      "stage": "evaluation",
+      "model": "seasonal_naive",
+      "n": 8,
+      "mae": 489.875,
+      "rmse": 530.205502611959,
+      "mape_pct": 11.882166298465616,
+      "bias": -20.375
+    },
+    {
+      "target": "revenue",
+      "stage": "monitor_2026",
+      "model": "equal_blend",
+      "n": 3,
+      "mae": 355.6813062982428,
+      "rmse": 387.5490201429157,
+      "mape_pct": 6.825779046956597,
+      "bias": -355.6813062982428
+    },
+    {
+      "target": "revenue",
+      "stage": "monitor_2026",
+      "model": "holt_winters",
+      "n": 3,
+      "mae": 337.07755600585034,
+      "rmse": 380.72761531422975,
+      "mape_pct": 6.487925873552568,
+      "bias": -337.07755600585034
+    },
+    {
+      "target": "revenue",
+      "stage": "monitor_2026",
+      "model": "lagged_ols",
+      "n": 3,
+      "mae": 374.2850565906353,
+      "rmse": 398.9386777613751,
+      "mape_pct": 7.163632220360625,
+      "bias": -374.2850565906353
+    },
+    {
+      "target": "revenue",
+      "stage": "monitor_2026",
+      "model": "seasonal_naive",
+      "n": 3,
+      "mae": 1028.0,
+      "rmse": 1052.8896744990268,
+      "mape_pct": 18.64416235091106,
+      "bias": -1028.0
+    },
+    {
+      "target": "operating_profit",
+      "stage": "validation",
+      "model": "delta_ols_12",
+      "n": 20,
+      "mae": 162.3066104617386,
+      "rmse": 210.70714132388775,
+      "mape_pct": 8.361482186012694,
+      "bias": 8.504551332548226
+    },
+    {
+      "target": "operating_profit",
+      "stage": "validation",
+      "model": "level_ols_12",
+      "n": 20,
+      "mae": 204.43371051797658,
+      "rmse": 260.1620504019297,
+      "mape_pct": 10.499403496904664,
+      "bias": 24.62318153111828
+    },
+    {
+      "target": "operating_profit",
+      "stage": "validation",
+      "model": "trailing_margin_4",
+      "n": 20,
+      "mae": 225.80592518147515,
+      "rmse": 263.5241655402031,
+      "mape_pct": 11.907009069740386,
+      "bias": 10.573212778769165
+    },
+    {
+      "target": "operating_profit",
+      "stage": "evaluation",
+      "model": "delta_ols_12",
+      "n": 8,
+      "mae": 96.61134900998664,
+      "rmse": 114.38088532860058,
+      "mape_pct": 6.678428902894957,
+      "bias": -45.10965175084206
+    },
+    {
+      "target": "operating_profit",
+      "stage": "evaluation",
+      "model": "level_ols_12",
+      "n": 8,
+      "mae": 158.3962903567904,
+      "rmse": 213.49104837865394,
+      "mape_pct": 10.621772455093456,
+      "bias": 136.17382116940283
+    },
+    {
+      "target": "operating_profit",
+      "stage": "evaluation",
+      "model": "trailing_margin_4",
+      "n": 8,
+      "mae": 110.11030547459637,
+      "rmse": 160.94042750089295,
+      "mape_pct": 8.207488076032948,
+      "bias": 62.319331123206894
+    },
+    {
+      "target": "operating_profit",
+      "stage": "monitor_2026",
+      "model": "delta_ols_12",
+      "n": 3,
+      "mae": 367.2274198142613,
+      "rmse": 374.6903475767109,
+      "mape_pct": 16.90975479249607,
+      "bias": -367.2274198142613
+    },
+    {
+      "target": "operating_profit",
+      "stage": "monitor_2026",
+      "model": "level_ols_12",
+      "n": 3,
+      "mae": 313.3989900599554,
+      "rmse": 327.37301240720933,
+      "mape_pct": 13.149204152972812,
+      "bias": -313.3989900599554
+    },
+    {
+      "target": "operating_profit",
+      "stage": "monitor_2026",
+      "model": "trailing_margin_4",
+      "n": 3,
+      "mae": 511.9728940055249,
+      "rmse": 530.2314978111738,
+      "mape_pct": 21.603917684372977,
+      "bias": -511.9728940055249
+    }
+  ],
+  "annual_fcff_scores": [
+    {
+      "stage": "validation",
+      "pipeline": "original",
+      "n": 5,
+      "fcff_mae": 1343.0262097058524,
+      "fcff_rmse": 2335.6942288481814
+    },
+    {
+      "stage": "validation",
+      "pipeline": "revised",
+      "n": 5,
+      "fcff_mae": 1345.2561148223663,
+      "fcff_rmse": 2118.0684515758294
+    },
+    {
+      "stage": "evaluation",
+      "pipeline": "original",
+      "n": 2,
+      "fcff_mae": 833.2635483193117,
+      "fcff_rmse": 978.496331206765
+    },
+    {
+      "stage": "evaluation",
+      "pipeline": "revised",
+      "n": 2,
+      "fcff_mae": 922.5050946512479,
+      "fcff_rmse": 930.1296015322963
+    }
+  ],
+  "forecast_2026": [
+    {
+      "pipeline": "original",
+      "asof": "2026-02-06",
+      "period": "2026Q1",
+      "revenue": 4367.00600911536,
+      "operating_profit": 1645.7860492205596
+    },
+    {
+      "pipeline": "original",
+      "asof": "2026-02-06",
+      "period": "2026Q2",
+      "revenue": 4548.568833076746,
+      "operating_profit": 1753.932124967415
+    },
+    {
+      "pipeline": "original",
+      "asof": "2026-02-06",
+      "period": "2026Q3",
+      "revenue": 4778.3057572063135,
+      "operating_profit": 1890.7726204867495
+    },
+    {
+      "pipeline": "original",
+      "asof": "2026-02-06",
+      "period": "2026Q4",
+      "revenue": 4499.526818946608,
+      "operating_profit": 1724.7207409451867
+    },
+    {
+      "pipeline": "revised",
+      "asof": "2026-02-06",
+      "period": "2026Q1",
+      "revenue": 4330.123029894525,
+      "operating_profit": 1367.989674445993
+    },
+    {
+      "pipeline": "revised",
+      "asof": "2026-02-06",
+      "period": "2026Q2",
+      "revenue": 4504.68663060836,
+      "operating_profit": 1434.7297525970228
+    },
+    {
+      "pipeline": "revised",
+      "asof": "2026-02-06",
+      "period": "2026Q3",
+      "revenue": 4727.7549092032805,
+      "operating_profit": 1532.6195474202004
+    },
+    {
+      "pipeline": "revised",
+      "asof": "2026-02-06",
+      "period": "2026Q4",
+      "revenue": 4403.161998888487,
+      "operating_profit": 1278.8011851725737
+    }
+  ],
+  "final_fcff": [
+    {
+      "pipeline": "original",
+      "revenue_model": "holt_winters",
+      "profit_model": "level_ols_12",
+      "revenue": 18193.40741834503,
+      "operating_profit": 7015.211535619911,
+      "assumed_tax_rate": 0.25,
+      "nopat": 5261.4086517149335,
+      "depreciation": 1973.4733304143065,
+      "capex": 4681.597316676274,
+      "core_wc_begin": 6011.0,
+      "core_wc_end": 6184.853070448589,
+      "change_core_wc": 173.85307044858928,
+      "simplified_fcff": 2379.4315950043765,
+      "capex_ratio": 0.2573238321456849,
+      "depreciation_ratio": 0.10847189231987332,
+      "core_wc_ratio": 0.33995023187422235
+    },
+    {
+      "pipeline": "revised",
+      "revenue_model": "equal_blend",
+      "profit_model": "delta_ols_12",
+      "revenue": 17965.72656859465,
+      "operating_profit": 5614.14015963579,
+      "assumed_tax_rate": 0.25,
+      "nopat": 4210.6051197268425,
+      "depreciation": 1948.7763577968863,
+      "capex": 4623.009607912321,
+      "core_wc_begin": 6011.0,
+      "core_wc_end": 6107.452912782629,
+      "change_core_wc": 96.45291278262903,
+      "simplified_fcff": 1439.9189568287784,
+      "capex_ratio": 0.2573238321456849,
+      "depreciation_ratio": 0.10847189231987332,
+      "core_wc_ratio": 0.33995023187422235
+    }
+  ],
+  "reconciliation_issues": [
+    {
+      "year": 2012,
+      "metric": "operating_profit",
+      "quarter_sum": 1974.0,
+      "annual_reported": 1973.0,
+      "difference": 1.0
+    },
+    {
+      "year": 2013,
+      "metric": "revenue",
+      "quarter_sum": 12204.0,
+      "annual_reported": 12205.0,
+      "difference": -1.0
+    }
+  ],
+  "unit": "USD million",
+  "plan_sha256": "3dc7db6e285b804564b2801703b8fc73ec739e537d9890ec8ea639f174b4bd56",
+  "source_sha256": "5ac0e3044f2368fe3dcce665440317bda9ce766feb27fd382e563593192ee80d",
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "1.26.4"
+  },
+  "scope": "Simplified FCFF uses depreciation and core AR+inventory-AP only. Tax 25% is assumed. CAPEX ratios unchanged. No enterprise/share valuation here."
+}

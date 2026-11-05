@@ -1,0 +1,10 @@
+{
+  "revision": "v2",
+  "status": "exploratory revision after inspecting 2024-2025 results",
+  "data": "TXN 2012Q1-2025Q4; 2026 quarters remain outside the main fit",
+  "revenue_candidates": ["seasonal_naive", "lagged_ols", "holt_winters", "equal_blend"],
+  "profit_candidates": ["level_ols_12", "trailing_margin_4", "delta_ols_12"],
+  "selection": "Separate one-quarter-ahead validation MAE on 2019-2023 for revenue and conditional profit; freeze choices before comparing 2024-2025 and optional 2026 monitoring",
+  "bridge": "2025 CAPEX, depreciation and core NWC ratios; no bridge tuning to test FCFF",
+  "honesty": "2024-2025 outcomes have already been inspected; revised results are exploratory rather than a new untouched test. No guarantee that every metric improves."
+}
